@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Pokemon GO Galarian Legendary Bird Practice</title>
+</head>
+<body>
+<div class="birds">
+<img src="https://images.gameinfo.io/pokemon/256/p144f672.webp" width="100" height="100" onclick="changeBird(this.id)" id="articuno">
+<img src="https://images.gameinfo.io/pokemon/256/p145f673.webp" width="100" height="100" onclick="changeBird(this.id)" id="zapdos">
+<img src="https://images.gameinfo.io/pokemon/256/p146f674.webp" width="100" height="100" onclick="changeBird(this.id)" id="moltres">
+</div>
+<div class="balls">
+<img src="https://static.wikia.nocookie.net/pokemongo/images/8/87/Pok%C3%A9_Ball.png/revision/latest/scale-to-width-down/150?cb=20170620234713" width="100" height="100" onclick="changeBall(this.id)" id="poke">
+<img src="https://static.wikia.nocookie.net/pokemongo/images/4/45/Great_Ball.png/revision/latest/scale-to-width-down/150?cb=20170620234738" width="100" height="100" onclick="changeBall(this.id)" id="great">
+<img src="https://static.wikia.nocookie.net/pokemongo_gamepedia_en/images/3/34/Ultra_Ball.png/revision/latest?cb=20160714140747" width="100" height="100" onclick="changeBall(this.id)" id="ultra">
+</div>
+<img src="berrytrayicon.png" width="50" height="50" class="trayb" id="trayb">
+<div id="tray" style="display: none">
+<img src="https://i.imgur.com/g3CUZZW.png" onclick="feedBerry('razz')" width="50">
+<img src="https://i.imgur.com/Mvb8ohn.png" onclick="feedBerry('nana')" width="50">
+<img src="https://i.imgur.com/H3agDsq.png" onclick="feedBerry('gold')" width="50">
+<img src="berrytrayicon.png" width="45" height="45" onclick="document.getElementById('tray').style.display ='none'" style="transform: translate(250px);">
+</div>
+<div id="catch">
+<img width="250" height="250" id="bird">
+<p id="birdText">&nbsp;</p>
+<div id="hitbox" style="display:none;position: absolute;">
+<br>
+</div>
+<div id="hitbox2" style="display:none;position: absolute;">
+<br>
+</div>
+<img id="ultraBall" width="100" height="100" style="position: absolute;">
+</div>
+<div id="sp">
+<p>Press Backspace to try bird</p>
+<h5 style="margin-top: 10px"> or click</h5>
+<p style="color: dodgerblue;font-weight: bold;display: none;" id="noBird">No bird has been selected!<br>
+Try again and select a bird<br>
+or a ball.</p>
+</div>
+<div id="runScreen" style="display:none">
+<h2>Ran!</h2>
+<button class="cool" onclick="location.reload()">Try again</button>
+</div>
+</body>
+</html>
